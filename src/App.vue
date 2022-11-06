@@ -4,9 +4,7 @@ import JBtn from "./package/j-btn/index.vue";
 
 <template>
   <div>
-    1
     <j-btn></j-btn>
-    2
   </div>
 </template>
 

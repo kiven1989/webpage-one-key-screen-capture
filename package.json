@@ -1,6 +1,6 @@
 {
-  "name": "@fancy16/WebOneKeySC",
-  "version": "0.1.6",
+  "name": "web-one-key-sc",
+  "version": "1.0.0",
   "main": "index.js",
   "private": false,
   "files": [

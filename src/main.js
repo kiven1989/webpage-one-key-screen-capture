@@ -4,8 +4,6 @@ import router from "./router";
 
 import "./assets/main.css";
 
-console.log("111");
-
 const app = createApp(App);
 
 app.use(router);

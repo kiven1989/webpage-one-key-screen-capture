@@ -1,5 +1,5 @@
 <template>
-  <button class="btn" @click="onClick">按钮2</button>
+  <i class="iconfont icon-xiangji1fill"></i>
 </template>
 <script>
 export default {
