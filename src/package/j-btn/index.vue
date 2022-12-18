@@ -4,16 +4,17 @@
     v-if="screenCaptureBtnVisible"
     class="iconfont icon-xiangji1fill screen-capture-btn"
   ></i>
-  <ul class="ul-ui">
-    <li v-for="item in [113, 2, 3, 4, 5, 6, 7, 8, 9]" :key="item">
-      {{ item }}
-    </li>
-  </ul>
 </template>
 <script>
 import html2canvas from "html2canvas";
 export default {
   name: "JBtn",
+  props: {
+    fileName: {
+      type: String,
+      default: "全屏截图",
+    },
+  },
   data() {
     return {
       screenCaptureBtnVisible: true,
@@ -33,7 +34,7 @@ export default {
         let tempImg = new Image();
         tempImg.src = canvas.toDataURL(); // 导出图片
         // 牵扯跨域
-        this.downloadNetMethod(tempImg.src, "海报");
+        this.downloadNetMethod(tempImg.src, this.fileName);
       });
     },
     /**
@@ -66,17 +67,6 @@ export default {
 </script>
 <style scoped lang="scss">
 @import "@/assets/main.css";
-.btn {
-  color: red;
-  font-size: 50px;
-}
-.ul-ui {
-  li {
-    padding: 50px;
-    margin-bottom: 30px;
-    background: yellow;
-  }
-}
 .screen-capture-btn {
   width: 40px;
   height: 40px;
