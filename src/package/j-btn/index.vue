@@ -78,12 +78,15 @@ export default {
   }
 }
 .screen-capture-btn {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  bottom: 20px;
+  right: 20px;
   border: 1px solid rgba(0, 128, 0, 0.4);
   z-index: 999;
-  padding: 10px;
   border-radius: 50%;
   font-size: 20px;
   cursor: pointer;
