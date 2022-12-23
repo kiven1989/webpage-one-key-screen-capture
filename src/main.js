@@ -10,4 +10,4 @@ const app = createApp(App);
 app.use(drag);
 app.use(router);
 
-app.mount("#app");
+app.mount("#oneKey");
